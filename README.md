@@ -1,7 +1,14 @@
 SpreeGeocoder
 =============
 
-Introduction goes here.
+Basic geocoding attributes added to the Address and StockLocation models. Automatically updated.
+
+Fields are:
+
+    :latitude
+    :longitude
+    :address - combined string used for submitting to geocoding service
+    :location - reverse geocoded location from geocoding service
 
 Installation
 ------------
@@ -36,4 +43,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_geocoder/factories'
 ```
 
-Copyright (c) 2015 [name of extension creator], released under the New BSD License
+Copyright (c) 2015 Marlin Forbes (datashaman), released under the New BSD License

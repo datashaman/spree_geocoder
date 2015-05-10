@@ -9,4 +9,7 @@ Spree::Address.class_eval do
     def address
         [ address1, address2, city, state_text, country.name ].compact.join(', ')
     end
+
+    reverse_geocoded_by :latitude, :longitude, :address => :location
+    after_validation :reverse_geocode
 end
